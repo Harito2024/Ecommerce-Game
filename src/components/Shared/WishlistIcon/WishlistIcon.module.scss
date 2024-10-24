@@ -1,0 +1,16 @@
+@import "~/src/scss/index.scss";
+
+.wishlistIcon{
+    color: $primary;
+    &:hover{
+        opacity: 0.4;
+        cursor: pointer;
+    }
+}
+
+.heart{
+    margin: 0 !important;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}

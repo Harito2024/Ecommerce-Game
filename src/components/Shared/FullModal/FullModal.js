@@ -1,0 +1,14 @@
+import styles from "./FullModal.module.scss";
+import { Icon, Modal } from "semantic-ui-react";
+
+export function FullModal(props) {
+  const { children, show, onClose } = props;
+  return (
+    <div>
+      <Modal open={show} className={styles.fullModal}>
+        <Modal.Content>{children} </Modal.Content>
+        <Icon name="close" className={styles.close} onClick={onClose}></Icon>
+      </Modal>
+    </div>
+  );
+}
